@@ -32,7 +32,7 @@ int Demo_Clock_Main(Toolbox::Util::EnvironmentBootstrap &bootstrap)
     using cout = BlackRoot::Util::Cout;
     
         // Introduce ourselves
-    cout{} << BlackRoot::Repo::VersionRegistry::GetBootString() << std::endl << std::endl;
+    cout{} << BlackRoot::Repo::VersionRegistry::get_boot_string() << std::endl << std::endl;
 
         // Create an environment and start its thread
 	DemoClock::Core::Environment * environment = new DemoClock::Core::Environment();

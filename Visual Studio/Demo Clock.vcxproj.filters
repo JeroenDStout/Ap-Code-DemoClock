@@ -11,49 +11,42 @@
     <Filter Include="Meta">
       <UniqueIdentifier>{b6764f48-b059-4c2e-8e7f-af85b661fdc5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Version">
+      <UniqueIdentifier>{678f6283-9b82-46f6-a858-a481307def3a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="../Pubc/Entry.cpp">
       <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="../Pubc/Version.cpp">
-      <Filter>Core</Filter>
-    </ClCompile>
     <ClCompile Include="..\Pubc\Environment.cpp">
       <Filter>Environment</Filter>
     </ClCompile>
+    <ClCompile Include="../Pubc/Version.cpp">
+      <Filter>Version</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="../Pubc/Version.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="../Pubc/Register.h">
-      <Filter>Core</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="..\Pubc\Environment.h">
       <Filter>Environment</Filter>
     </ClInclude>
+    <ClInclude Include="../Pubc/Version.h">
+      <Filter>Version</Filter>
+    </ClInclude>
+    <ClInclude Include="../Pubc/Register.h">
+      <Filter>Version</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\Meta\licence_name.txt">
-      <Filter>Meta</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="../Meta/libraries.json">
-      <Filter>Meta</Filter>
-    </None>
     <None Include="../Meta/contributors.json">
-      <Filter>Meta</Filter>
+      <Filter>Version</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\Meta\generate_meta.txt">
-      <Filter>Meta</Filter>
-    </CustomBuild>
+    <None Include="../Meta/libraries.json">
+      <Filter>Version</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="icon1.ico">
@@ -64,5 +57,20 @@
     <ResourceCompile Include="Demo Clock.rc">
       <Filter>Meta</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Meta\licence_name.txt">
+      <Filter>Version</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <BRVersionDef Include="..\..\BlackRoot\Meta\.brversion">
+      <Filter>Version</Filter>
+    </BRVersionDef>
+  </ItemGroup>
+  <ItemGroup>
+    <BRMetaDef Include="..\..\BlackRoot\Meta\.brmeta">
+      <Filter>Version</Filter>
+    </BRMetaDef>
   </ItemGroup>
 </Project>
